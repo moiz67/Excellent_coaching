@@ -1,0 +1,30 @@
+.container{
+    border: 5px solidrgb(95, 87, 87)k;
+    height: 800px;
+    width: 800px;
+background-color: rgb(248, 246, 242);
+    
+    margin-left: 300px;
+    border-left: 2px solid rgb(100, 98, 97);
+    border-bottom:2px solid rgb(66, 63, 63) ;
+    border-top:2px solid rgb(58, 56, 56) ;
+}
+img{
+    height: 200px;
+    margin-right: 100px;
+    margin: 0px;
+}
+div{
+    display: flex;
+    margin: 0;
+}
+.cont{
+    margin-left: 100px;
+}
+h1{
+    font-weight:lighter;
+}
+.con{
+    border-right: 3px solid rgb(65, 62, 62);
+
+}
