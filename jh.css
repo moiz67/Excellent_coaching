@@ -1,5 +1,5 @@
 *{
-
+box-sizing: border-box;
 }
 :root{
     --primary:rgb(0, 0, 0);
@@ -17,8 +17,8 @@ background-color: rgb(248, 246, 242);
     border-bottom:2px solid rgb(27, 27, 27) ;
     border-top:2px solid rgb(10, 10, 10) ;
 }
-img{
-    height: 200px;
+.con img{
+    height: 550px;
     margin-right: 100px;
     margin: 0px;
     width: 230px;
