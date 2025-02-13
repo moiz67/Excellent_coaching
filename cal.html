@@ -50,7 +50,7 @@ color: white;
         border-radius: 5px;
     }
     #mob{
-        color: rgb(255, 230, 0);
+        color: rgb(0, 0, 0);
         font-size: 30px;
         font-weight: 400;
         
@@ -68,6 +68,7 @@ color: white;
     }
     .navbar{
       z-index: 2;
+      background-color: rgb(255, 255, 255);
     }
     .cont{
     display: flex;
@@ -80,7 +81,7 @@ color: white;
   }
   .card{
     border-color: black;
-    transition: transform 1.1s ease;
+    transition: transform 2.1s ease;
     margin-top: 30px;
     margin-bottom: 25px;
   }
@@ -98,7 +99,7 @@ color: white;
      color: rgb(255, 255, 255);
   }
   a:hover{
-    color: rgb(255, 255, 255);
+    
     font-weight: bold;
   }
   .but{
@@ -108,56 +109,88 @@ color: white;
    border-radius: 10px;
    color: rgb(255, 255, 255);
    transition: background 0.9s ease-in-out;
-   background-color: yellow;
+   background-color: rgb(0, 0, 0);
         border: none;
         
   }
   .but:hover{
    
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
   
 #q{
   margin-top: 30px;
   margin-left: 20px;
 }
+body{
+  
+}
    
+.navbar {
+        background-color: #f8f9fa; /* Light background color */
+      }
+      .navbar-brand {
+        font-weight: bold;
+      }
+      .navbar-nav .nav-link {
+        font-weight: 500;
+        position: relative;
+        padding-bottom: 5px;
+      }
 
+      
+      .navbar-nav .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: black;
+        left: 0;
+        bottom: 0;
+        transition: width 0.3s ease-in-out;
+      }
+
+      
+      .navbar-nav .nav-link:hover::after {
+        width: 100%;
+      }
+      .profile{
+        
+        display: flex;
+      }
+      .profile img{
+        height: 25px;
+        border-radius: 20px;
+      }
 
 </style>
 <body>
     
-    <nav class="navbar  position-fixed navbar-expand-lg  w-100 ">
-        <div class="container-fluid" >
-        
-          <a class="navbar-brand" href="#" id="mob">Exellent Coaching</a>
-        
-          <button class="navbar-toggler bg-active" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-lg-0 " >
-              <li class="nav-item ">
-                <a class="nav-link active" aria-current="page" href="#" style="color: rgb(210, 255, 10); font-weight: 500;">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#" style="color: rgb(228, 253, 3);font-weight: 500; ">Courses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#" style="color: rgb(200, 255, 0);font-weight: 500;">Faculty</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" style="color: rgb(189, 255, 7);font-weight: 500;">Contact us</a>
-              </li>
-            
-              
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Exellent Coaching</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Faculty</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
     
       
         <div id="carouselExampleCaptions" class="carousel slide">
@@ -221,19 +254,21 @@ color: white;
                     <div class="card-body">
                       <h6>Career Counseling</h6>
                       <p class="card-text">Career counseling plays a pivotal role in helping individuals find satisfaction and success in their professional lives</p>
-                      <h6>By: Prof Sinan</h6>
+                  
+                      <div class="profile"><img src="https://randomuser.me/api/portraits/men/52.jpg" alt="" id="image" ><h6 >By: Prof Sinan</h6></div>
                       <button class="but"> <a href="New folder/career.html">Details</a> </button>
                     
                     </div>
                   </div>
               
                   <div class="card" style="width: 18rem;">
-                    <img src="https://miro.medium.com/v2/resize:fit:1400/0*YqUat4Nlf4lV0usl" class="card-img-top" alt="...">
-                    <div lass="card-body">
+                    <img src="https://img.freepik.com/free-vector/young-people-talking-different-languages-pack_23-2148370641.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
                       <h6>Free Lancing</h6>
-                      <p class="card-text">Freelancing can be an incredibly rewarding career path, offering freedom, flexibility, and the potential for great financial rewards . </p>
-                      <h6 id="q">By: Prof Orhan</h6>
-                      <button class="but"><a href="New folder/freelance.html">Details</a></button>
+                      <p class="card-text">Freelancing can be an incredibly rewarding career path, offering freedom, flexibility, and the potential for rewards .</p>
+                      <div class="profile"><img src="https://randomuser.me/api/portraits/men/21.jpg" alt="" id="image" >
+                      <h6>Prof Orhan</h6></div>
+                      <button class="but">   <a href="New folder/conversational.html" >Details</a></button>
                     </div>
                   </div>
               
@@ -242,7 +277,9 @@ color: white;
                     <div class="card-body">
                       <h6>Graphic Design</h6>
                       <p class="card-text">Graphic design is a rewarding and dynamic field that offers endless opportunities, whether as a freelancer or working in-house.</p>
-                      <h6>By: Miss Mariyam</h6>
+                        
+                      <div class="profile"><img src="https://randomuser.me/api/portraits/women/41.jpg" alt="" id="image" >
+                      <h6>By: Miss Mariyam</h6></div>
                       <button class="but"> <a href="New folder/graphics.html">Details</a> </button>
                     
                     </div>
@@ -254,7 +291,8 @@ color: white;
                     <div class="card-body">
                       <h6>Digital Marketing</h6>
                       <p class="card-text"> Digital marketing offers vast opportunities By learning the various components—SEO, content marketing, social media.....</p>
-                      <h6>By: Miss Hunza</h6>
+                      <div class="profile"><img src="https://randomuser.me/api/portraits/women/63.jpg" alt="" id="image" >
+                      <h6>By: Miss Hunza</h6></div>
                       <button class="but"> <a href="New folder/didgital.html">Details</a> </button>
                     
                     </div>
@@ -269,7 +307,8 @@ color: white;
                       <h6>General Language</h6>
                       <p class="card-text">Focus on reading , writing , speaking , and listening. Suitable for beginners , intermediate , and advance learners.
                       </p>
-                      <h6>By: Miss Beaula</h6>
+                      <div class="profile"><img src="https://randomuser.me/api/portraits/women/92.jpg" alt="" id="image" >
+                      <h6>By: Miss Beaula</h6></div>
                       <button class="but"> <a href="New folder/general.html">Details</a></button>
                     </div>
                   </div>
@@ -279,7 +318,8 @@ color: white;
                     <div class="card-body">
                       <h6>Conversational Language</h6>
                       <p class="card-text"> Conversational Language Emphasis on speaking and listening. Designed to build confidence in real-life conversations.</p>
-                      <h6>By: Prof Dawood</h6>
+                      <div class="profile"><img src="https://randomuser.me/api/portraits/men/64.jpg" alt="" id="image" >
+                      <h6>By: Prof Dawood</h6></div>
                       <button class="but">   <a href="New folder/conversational.html" >Details</a></button>
                     </div>
                   </div>
@@ -290,7 +330,8 @@ color: white;
                       <h6>Business Language</h6>
                       <p class="card-text">Tailored to industry-specific vocabulary and communication skills. Focus on professional setting, meeting, emails, and presentation.
                       </p>
-                      <h6>By: Prof Ali </h6>
+                      <div class="profile"><img src="https://randomuser.me/api/portraits/men/48.jpg" alt="" id="image" >
+                      <h6>By: Prof Ali </h6> </div>
                       <button class="but">  <a href="New folder/Business.html" >Details</a></button>
                     </div>
                   </div>
@@ -301,7 +342,8 @@ color: white;
                       <h6>Exam Prepration</h6>
                       <p class="card-text">Focused on preparing for language proficiency exams (e.g., TOEFL , IELTS , DELF , DELE , JLPT etc...).Includes exams tips..
                       </p>
-                      <h6>By: Miss Maheen</h6>
+                      <div class="profile"><img src="https://randomuser.me/api/portraits/men/84.jpg" alt="" id="image" >
+                      <h6>By: Miss Maheen</h6></div>
                       <button class="but"><a href="New folder/exam.html">Details</a></button>
                     </div>
                   </div>
@@ -313,7 +355,8 @@ color: white;
                       <div class="card-body">
                         <h6>Art & Design</h6>
                         <p class="card-text">The world of Art & Design is expansive and offers countless opportunities for self-expression, innovation, and career development. </p>
-                        <h6>By: Artist Saif</h6>
+                        <div class="profile"><img src="https://randomuser.me/api/portraits/men/43.jpg" alt="" id="image" >
+                        <h6>By: Artist Saif</h6></div>
                         <button class="but"><a href="New folder/art.html">Details</a></button>
                       </div>
                     </div>
@@ -322,7 +365,8 @@ color: white;
                       <div class="card-body">
                         <h6>Videography</h6>
                         <p class="card-text">Becoming a skilled videographer involves understanding both the technical and creative aspects of video production.. From capturing high-quality footage </p>
-                        <h6>By: Videographer Wahab</h6>
+                        <div class="profile"><img src="https://randomuser.me/api/portraits/men/88.jpg" alt="" id="image" >
+                        <h6>By: Videographer Wahab</h6>     </div>
                         <button class="but"><a href="New folder/video.html">Details</a></button>
                       </div>
                     </div>
@@ -332,7 +376,8 @@ color: white;
                       <div class="card-body">
                         <h6>Sketching</h6>
                         <p class="card-text">Being a sketch artist is not just about drawing; it’s about observing the world around you and translating that observation into art.Whether you sketch for personal </p>
-                        <h6>By: Sketcher Aishay</h6>
+                        <div class="profile"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="" id="image" >
+                        <h6>By: Sketcher Aishay</h6>  </div>
                         <button class="but"><a href="New folder/sketch.html">Details</a></button>
                       </div>
                     </div>
@@ -342,11 +387,38 @@ color: white;
                       <div class="card-body">
                         <h6>Photography</h6>
                         <p class="card-text">Becoming a skilled photographer involves a combination of technical knowledge, creativity, and practice. Whether you're interested in capturing moments at a wedding, </p>
-                        <h6>By: Photographer Owais</h6>
+                        <div class="profile"><img src="https://randomuser.me/api/portraits/men/35.jpg" alt="" id="image" >
+                        <h6>By: Photographer Owais</h6></div>
                         <button class="but"><a href="New folder/photo.html">Details</a></button>
                       </div>
                     </div>
                   </div>
+                
+                
+                  
+                  <footer class="bg-dark text-white py-4">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <h5>About Us</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        </div>
+                        <div class="col-md-4">
+                          <h5>Quick Links</h5>
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Home</a></li>
+                            <li><a href="#" class="text-white">Services</a></li>
+                            <li><a href="#" class="text-white">Contact</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4">
+                          <h5>Contact Us</h5>
+                          <p>Email: info@example.com</p>
+                          <p>Phone: +1 234 567 890</p>
+                        </div>
+                      </div>
+                    </div>
+                  </footer>
               
     
     
