@@ -1,0 +1,181 @@
+/* Root-level styles (Global variables) */
+:root {
+    --font-main-size: 50px;
+    --font-secondary-size: 20px;
+    --button-hover-color: #fff;
+    --button-hover-bg: #000;
+    --button-bg: #000;
+    --navbar-bg: #f8f9fa;
+    --hover-effect-duration: 2.1s;
+    --transition-duration: 1.7s;
+    --search-btn-bg: gold;
+    --search-btn-hover-color: #000000;
+    --search-btn-hover-bg: rgb(255, 251, 0);
+    --card-hover-shadow: 0px 0px 5px black;
+}
+
+/* Global Font Sizes */
+.font {
+    font-size: var(--font-main-size);
+}
+
+.font1 {
+    font-size: var(--font-secondary-size);
+}
+
+/* Global Button Styles */
+#sea, .but {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    color: var(--button-hover-color);
+    width: 200px;
+    height: 45px;
+    transition: background var(--transition-duration) ease-in-out;
+}
+
+#sea:hover, .but:hover {
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-color);
+}
+
+/* Search Button */
+#sea {
+    width: 100px;
+    height: 40px;
+    transition: background var(--transition-duration) ease-in-out;
+}
+
+#sea:hover {
+    background-color: var(--search-btn-hover-bg);
+    color: var(--search-btn-hover-color);
+}
+
+#SEa {
+    width: 500px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+}
+
+#search {
+    color: #fff;
+    margin-bottom: 50px;
+    margin-right: 200px;
+}
+
+/* Navbar Styles */
+.navbar {
+    z-index: 2;
+    background-color: var(--navbar-bg);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Profile Styling */
+.profile {
+    display: flex;
+}
+
+.profile img {
+    height: 25px;
+    border-radius: 20px;
+}
+
+/* Container and Card Styles */
+.cont {
+    display: flex;
+    gap: 30px;
+    margin-left: 65px;
+    flex-wrap: wrap;
+    text-align: justify;
+    
+}
+
+img {
+    height: 200px;
+}
+
+.card {
+    border-color: black;
+    transition: transform var(--hover-effect-duration) ease;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: var(--card-hover-shadow);
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* Search Input Styling */
+#q {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+/* Other Element Styles */
+#mn {
+    height: 550px;
+    margin: 0;
+}
+
+#mob {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+span {
+    color: gold;
+}
+.but{
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 5px;
+}
