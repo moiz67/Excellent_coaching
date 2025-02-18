@@ -3,245 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Contact Us | Excellent Coaching</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <title>Contact Us - Excellent Coaching</title>
+    <link rel="stylesheet" href="Assest/faculty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <style>
-      * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-
-
-.contact-us {
-    background-color: #fff;
-    padding: 50px 20px;
-}
-
-.contact-us h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.contact-image img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-}
-
-form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-textarea {
-    height: 150px;
-    resize: none;
-}
-
-button {
-    padding: 12px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-#form-response {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
-    color: green;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .contact-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-image {
-        margin-bottom: 20px;
-    }
-}
-  
-    </style>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Exellent Coaching</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link " href="Home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="New folder/acards.html">Courses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="">Faculty</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactus.html">Contact us</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#">Excellent Coaching</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link " href="contactus.html">Contact us</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <section class="contact-us" id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-info">
-                <div class="contact-image">
-                    <img src="https://th.bing.com/th/id/OIP.GklM5P0pXrZ_U7tzTxgRDwHaHa?rs=1&pid=ImgDetMain.jpg" alt="Coaching">
+    <div class="container mt-5">
+      <div class="row">
+        
+          <div class="col-md-6">
+              <h2>Send Us a Message</h2>
+              <form action="#" method="post">
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Your Email</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Your Message</label>
+                      <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+          </div>
+      </div>
+  </div>
+    <!-- Contact Us Content -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-4">Get in Touch</h2>
+                <div class="contact-info">
+                    <div class="mb-4">
+                        <h4><i class="fas fa-map-marker-alt me-2"></i>Our Address</h4>
+                        <p class="ms-4">
+                            123 Education Street<br>
+                            Learning City, NY 54321<br>
+                            United States
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <h4><i class="fas fa-envelope me-2"></i>Email Us</h4>
+                        <p class="ms-4">
+                            <a href="mailto:contact@excellentcoaching.com" class="text-decoration-none">
+                                contact@excellentcoaching.com
+                            </a>
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <h4><i class="fas fa-phone me-2"></i>Call Us</h4>
+                        <p class="ms-4">+1 (234) 567-890</p>
+                    </div>
                 </div>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
-                    <p id="form-response"></p>
-                </form>
-                
-                        </div>
-                
-                        <!-- Location Section -->
-                        <div class="location-info">
-                            <h3>Our Location</h3>
-                            <p>Visit us at:</p>
-                            <p>Excellent Coaching, 1234 Coaching , City, Country</p>
-                        
-                           
-                        </div>
-                    </div>
-                </section>
-                 
-                <footer class="bg-dark text-white py-4">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-4">
-                          <h5>About Us</h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        </div>
-                        <div class="col-md-4">
-                          <h5>Quick Links</h5>
-                          <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">Home</a></li>
-                            <li><a href="#" class="text-white">Services</a></li>
-                            <li><a href="#" class="text-white">Contact</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4">
-                          <h5>Contact Us</h5>
-                          <p>Email: info@example.com</p>
-                          <p>Phone: +1 234 567 890</p>
-                        </div>
+            </div>
+            <div class="col-md-6">
+                <div class="map-container mb-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548229184!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1716117648870!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-section">
+      <div class="container">
+          <div class="footer-cta pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <div class="cta-text">
+                              <h4>Find us</h4>
+                              <span>123 Education Street, Learning City, NY 54321</span>
+                          </div>
                       </div>
-                    </div>
-                  </footer>
-                <script>
-                    function create(){
-           
-           let email = document.getElementById("x").value;
-           let pass = document.getElementById("y").value;
-           let contact = document.getElementById("z").value;
-           
-           if(email ===""|| pass ===""|| contact ===""){
-             alert("Please fill all the fields")
-           }
-           
-           let emailpattern =/[a-zA-Z0-9_/.]+@[a-z]+\.[a-z]{2,3}/;
-           
-           if(!emailpattern.test(email)){
-             alert("Invalid email PLEASE TRY AGAIN");
-             return false;
-           }
-           
-           let passpattern = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=,*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]/;
-           
-           if(!passpattern.test(pass)){
-             alert("Wrong Password!")
-             return false;
-           }
-           
-           let contactpattern = /03[0-9]{9}/;
-           
-           if(!contactpattern.test(contact)){
-             alert("Your phone number is incorrect")
-             return false;
-           }
-           
-           alert("You create your account successfully")
-           return true;
-           }
-               </script>     
-            </body>
-            </html>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fas fa-phone"></i>
+                          <div class="cta-text">
+                              <h4>Call us</h4>
+                              <span>+1 234 567 890</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="far fa-envelope-open"></i>
+                          <div class="cta-text">
+                              <h4>Mail us</h4>
+                              <span>contact@excellentcoaching.com</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-content pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-logo">
+                              <h3 class="footer-brand">Excellent Coaching</h3>
+                          </div>
+                          <div class="footer-text">
+                              <p>Transforming lives through quality education since 2010. We offer professional courses and career guidance to help you achieve your dreams.</p>
+                          </div>
+                          <div class="footer-social-icon">
+                              <span>Follow us</span>
+                              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Quick Links</h3>
+                          </div>
+                          <ul class="footer-links">
+                              <li><a href="Home.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                              <li><a href="acards.html"><i class="fas fa-chevron-right"></i> Courses</a></li>
+                              <li><a href="#"><i class="fas fa-chevron-right"></i> Faculty</a></li>
+                              <li><a href="contactus.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                              <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                              <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Subscribe</h3>
+                          </div>
+                          <div class="footer-text mb-25">
+                              <p>Get latest updates and offers straight to your inbox</p>
+                          </div>
+                          <div class="subscribe-form">
+                              <form action="#">
+                                  <input type="email" placeholder="Enter your email" class="form-control">
+                                  <button class="subscribe-btn"><i class="fab fa-telegram-plane"></i></button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright-area">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                      <div class="copyright-text">
+                          <p>© 2025 Excellent Coaching. All Rights Reserved</p>
+                      </div>
+                  </div>
+                  
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

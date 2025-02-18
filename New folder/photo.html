@@ -3,58 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assest/section.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
     <title>Document</title>
 </head>
 <style>
- img{
-        width: 450px;
-    }
-    .cont{
-       display: flex;
-        margin-top: 60px;
-        margin-left: 80px;
-    }
-   .right{
-    margin-left: 90px;
-   }
-   .left{
-    margin-top: 40px;
-    margin-left: 40px;
-   }
-   button{
-    width: 200px;
-    padding: 9px;
-    border-radius: 25px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    margin-left: 700px;
-    margin-top: 20px;
-   }
-   button:hover{
-    background-color: grey;
-    color: black;
-    font-weight: bold;
-   }
-   h3{
-    margin-left: 100px;
-   }
+
 </style>
 <body>
-    <div class="cont">
-        <div class="left">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Exellent Coaching</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../faculty.html">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contactus.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
             <img src="https://cdn01.alison-static.net/courses/1326/alison_courseware_intro_1326.jpg" alt="">
             <h3>Monthly fee: 6000/-PKR</h3>
             <h3>Total Duration: 6 months</h3>
         </div>
-        <div class="right">
+        <div class="col-md-6">
+
              <h1>PHOTOGRAPHY</h1>
              <h4>By: Photographer Owais</h4>
              <p>Becoming a skilled photographer involves a combination of technical knowledge,<br> creativity, and practice. Whether you're interested in capturing moments at a wedding, <br>shooting products for a business, or expressing yourself through fine art photography,<br> understanding your camera, mastering lighting, and learning how to compose a great <br>image are key components of success.
             </p>
-            <p>A photography course introduces the basics of capturing high-quality images using <br> various camera types. Students learn about camera settings, such as aperture, shutter <br> speed, and ISO, to control exposure. The course covers composition techniques like <br>the rule of thirds and leading lines to enhance visual storytelling. Students explore <br> different types of photography, including portrait, landscape, and still life. Lighting <br>techniques, both natural and artificial, are taught to achieve the desired mood in photos. <br>Editing software, such as Adobe Lightroom and Photoshop, is often included for post- <br>processing skills. The course also covers the use of lenses and filters to achieve different <br>effects. Practical assignments encourage students to experiment with their newfound skills. <br>Students receive feedback to refine their technique and style. By the end, participants gain <br>the ability to capture compelling, professional-quality images.</p>
+            <p class="para">A photography course introduces the basics of capturing high-quality images using <br> various camera types. Students learn about camera settings, such as aperture, shutter <br> speed, and ISO, to control exposure. The course covers composition techniques like <br>the rule of thirds and leading lines to enhance visual storytelling. Students explore <br> different types of photography, including portrait, landscape, and still life. Lighting <br>techniques, both natural and artificial, are taught to achieve the desired mood in photos. <br>Editing software, such as Adobe Lightroom and Photoshop, is often included for post- <br>processing skills. The course also covers the use of lenses and filters to achieve different <br>effects. Practical assignments encourage students to experiment with their newfound skills. <br>Students receive feedback to refine their technique and style. By the end, participants gain <br>the ability to capture compelling, professional-quality images.</p>
         </div>
     </div>
-    <button>Enroll</button>
+    </div>
+    <button class="butt2">Enroll</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // JavaScript to trigger the slide-down animation
+        document.addEventListener("DOMContentLoaded", function () {
+            const rightSection = document.querySelectorAll(".col-md-6")[1]; // Selecting the second .col-md-6
+
+            // Add a small delay to ensure the DOM is fully loaded
+            setTimeout(() => {
+                rightSection.querySelectorAll("h1, h4, p").forEach(element => {
+                    element.classList.add("slide-down");
+                });
+            }, 500); // Adjust the delay as needed
+        });
+    </script>
 </body>
 </html>

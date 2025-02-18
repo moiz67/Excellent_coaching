@@ -1,58 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assest/section.css">
     <title>Document</title>
 </head>
-<style>
-    div.con{
-        display: flex;
-        margin-top: 60px;
-        margin-left: 20px;
-    }
-    .right{
-        margin-left: 60px;
-    }
-    .left{
-        margin-left: 20px;
-    }
-    button{
-    width: 200px;
-    padding: 9px;
-    border-radius: 25px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    margin-left: 700px;
-   
-   }
-   button:hover{
-    background-color: grey;
-    color: black;
-    font-weight: bold;
-   }
-   h3{
-    margin-left: 90px;
-   }
-</style>
+
 <body>
-    <div class="con">
-        <div class="left">
-            <img src="https://prepory.com/wp-content/uploads/revslider/Career-Coaching/AdobeStock_2537084141.png" alt="">
-            <h3>Monthly fee: 2000/-PKR</h3>
-            <h3>Total Duration: 3 months</h3>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Exellent Coaching</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../faculty.html">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contactus.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="right">
-            <h1>CAREER COUNSELING:</h1>
-            <h4>By: Prof Sinan</h4>
-            <p>Career counseling plays a pivotal role in helping individuals find satisfaction and success in their <br> professional lives. By offering well-structured counseling and skill-building programs, you can help <br> individuals navigate the complexities of career planning, transitions, and growth.
-            </p>
-            <p>Career counseling is a professional service designed to help individuals explore their career options, <br> set career goals, and make informed decisions about their future. It begins with assessing the individual's <br> interests, skills, values,  and personality traits to identify potential career paths that align with their strengths. <br> Counselors also provide guidance on educational requirements, job market trends, and industry insights.  <br>They assist with resume building, job search strategies, interview preparation, and networking. Career <br> counseling can benefit students, professionals looking to switch careers, or anyone seeking personal growth <br> in their work life. Additionally, it helps individuals navigate challenges like career burnout or job dissatisfaction. <br> The counseling process fosters self-awareness, helping clients make decisions that align with their long-term <br>happiness and success. Ultimately, it empowers individuals to make confident and well-informed career choices.</p>
-            <p>Would you like more specific guidance on setting up a career counseling program . one-on-one coaching sessions?
-            </p>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://prepory.com/wp-content/uploads/revslider/Career-Coaching/AdobeStock_2537084141.png" 
+                             alt="Career Counseling Image" 
+                             class="img-fluid">
+                        <div class="price-list-section">
+                            <h3>Monthly fee: 2000/- PKR</h3>
+                            <h3>Total Duration: 3 months</h3>
+                            <button onclick="downloadPriceList()" class="download-btn">
+                                <i class="fas fa-download"></i>
+                                Download Full Price List
+                            </button>
+                        </div>
+                    </div>
+            <div class="col-md-6">
+                <h1>CAREER COUNSELING:</h1>
+                <div class="profile">
+                    <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Prof Sinan">
+                    <h4>By: Prof Sinan</h4>
+                </div>
+                <p>Career counseling plays a pivotal role in helping individuals find satisfaction and success in their professional lives. By offering well-structured counseling and skill-building programs, you can help individuals navigate the complexities of career planning, transitions, and growth.</p>
+
+                <p class="para">Career counseling is a professional service designed to help individuals explore their career options, set career goals, and make informed decisions about their future. It begins with assessing the individual's interests, skills, values, and personality traits to identify potential career paths that align with their strengths. Counselors also provide guidance on educational requirements, job market trends, and industry insights. They assist with resume building, job search strategies, interview preparation, and networking. Career counseling can benefit students, professionals looking to switch careers, or anyone seeking personal growth in their work life. Additionally, it helps individuals navigate challenges like career burnout or job dissatisfaction. The counseling process fosters self-awareness, helping clients make decisions that align with their long-term happiness and success. Ultimately, it empowers individuals to make confident and well-informed career choices.</p>
+            </div>
         </div>
     </div>
-    <button>Enroll</button>
+
+    <button class="butt2">Enroll</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+         function downloadPriceList() {
+            // Create a virtual price list
+            const priceListContent = `Career Counseling Course Price List\n
+            Monthly Fee: 2,000 PKR\n
+            Total Duration: 3 Months\n
+            Registration Fee: 1,000 PKR\n
+            Assessment Fee: 500 PKR\n
+            Certification Fee: 1,000 PKR\n
+            Total Course Cost: 8,500 PKR`;
+
+            // Create a Blob with the content
+            const blob = new Blob([priceListContent], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            
+            // Create a temporary link
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Career-Counseling-PriceList.txt';
+            
+            // Trigger the download
+            document.body.appendChild(a);
+            a.click();
+            
+            // Cleanup
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        }
+        // JavaScript to trigger the slide-down animation
+        document.addEventListener("DOMContentLoaded", function () {
+            const rightSection = document.querySelectorAll(".col-md-6")[1]; // Selecting the second .col-md-6
+
+            // Add a small delay to ensure the DOM is fully loaded
+            setTimeout(() => {
+                rightSection.querySelectorAll("h1, h4, p").forEach(element => {
+                    element.classList.add("slide-down");
+                });
+            }, 500); // Adjust the delay as needed
+        });
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,203 @@
+/* General image styling */
+.navbar{
+    background-color: rgb(179, 177, 175);
+}
+img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+/* Flexbox Layout for .container */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+/* Both columns */
+.col-md-6{
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+/* Enroll Button Styling */
+.butt2 {
+    width: 200px;
+    padding: 9px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    transition: background 0.7s ease-in-out;
+    border: none;
+}
+
+.butt2:hover {
+    background-color: rgb(255, 174, 0);
+    color: rgb(0, 0, 0);
+}
+
+/* Text styling for h3 */
+h3 {
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+/* Slide-Down Animation */
+.col-md-6 {
+    overflow: hidden;
+}
+
+.col-md-6 h1,
+.col-md-6 h4,
+.col-md-6 p {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Profile hover effects */
+.profile h1 {
+    transition-delay: 0.2s;
+}
+
+.profile h4 {
+    transition-delay: 0.4s;
+}
+
+h4:hover {
+    color: #000;
+}
+
+.col-md-6 p {
+    transition-delay: 0.6s;
+flex-wrap: wrap;
+
+}
+
+/* Styling the profile image */
+.profile img {
+    border-radius: 50%;
+    width: 40px; /* Increased size for visibility */
+    height: 40px; /* Ensuring square */
+    margin-right: 10px;
+}
+
+.profile {
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.profile::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.profile:hover::after {
+    width: 100%;
+}
+
+/* Slide-down class */
+.slide-down {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Navbar hover effects */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+.price-list-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.download-btn {
+    background-color: rgb(253, 186, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.7s ease-in-out;
+    border: none;
+}
+
+.download-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .col-md-6 h1 {
+        font-size: 1.8rem;
+    }
+
+    .col-md-6 h4 {
+        font-size: 1.2rem;
+    }
+
+    .col-md-6 p {
+        font-size: 1.0rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-6 h1 {
+        font-size: 1.7rem;
+    }
+
+    .col-md-6 h4 {
+        font-size: 1.3rem;
+    }
+
+    .col-md-6 p {
+        font-size: 1.2rem;
+    }
+
+    .para {
+        display: none;
+    }
+}
