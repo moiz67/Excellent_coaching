@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketcher Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card {
+            transition: transform 0.2s;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .details h1 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+        .lead {
+            font-size: 1.25rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Excellent Coaching</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../faculty.html">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <!-- Profile Section -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?uid=R187847085&ga=GA1.1.1074907365.1739773802&semt=ais_hybrid" 
+                     alt="Sketcher Aishay" 
+                     class="profile-img">
+            </div>
+            <div class="col-md-8">
+                <h1>Sketcher Aishay</h1>
+                <p class="lead">
+                    Ayesha is an experienced sketch art teacher with a passion for helping students develop their 
+                    drawing skills. She frequently showcases her students' works in local exhibitions, giving them 
+                    the opportunity to share their art with a wider audience.
+                </p>
+            </div>
+        </div>
+
+        <!-- Courses Section -->
+        <h2 class="mb-4 text-center">Featured Courses</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="https://i.ytimg.com/vi/mzzvCGfKZR8/hq720.jpg" 
+                         class="card-img-top" 
+                         alt="Skillshare Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Skillshare - Introduction to Sketching</h5>
+                        <p class="card-text">
+                            Beginner-friendly course covering sketching fundamentals, including line work, shading, 
+                            and perspective techniques.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL3ClvJjv2MUA08KUYZ0P30vzMNKc3XZFWVg&s" 
+                         class="card-img-top" 
+                         alt="Domestika Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Domestika - Sketching for Beginners</h5>
+                        <p class="card-text">
+                            Learn to sketch everyday objects with focus on observation techniques and basic 
+                            drawing principles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="https://www.londonartcollege.co.uk/Content/images/file-product%2Fbeginners-drawing-course.jpg" 
+                         class="card-img-top" 
+                         alt="Udemy Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Udemy - Mastering Sketching</h5>
+                        <p class="card-text">
+                            Comprehensive course exploring advanced sketching techniques, texture rendering, 
+                            and composition.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

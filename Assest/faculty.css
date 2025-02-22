@@ -1,17 +1,15 @@
 
+
 .navbar {
     z-index: 2;
-    background-color: var(--navbar-bg);
+    background-color: #e6e6e6;
 }
-
-
 
 .navbar-nav .nav-link {
     font-weight: 500;
     position: relative;
     padding-bottom: 5px;
 }
-
 
 .navbar-nav .nav-link::after {
     content: '';
@@ -27,6 +25,7 @@
 .navbar-nav .nav-link:hover::after {
     width: 100%;
 }
+
 .success-stories-section {
     background-color: #f8f9fa;
     padding: 60px 0;
@@ -38,28 +37,100 @@
     color: #333;
 }
 
-.card {
+#car {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    margin-top: 30px;
+    margin-bottom: 25px;
     cursor: pointer;
 }
 
-.card:hover {
+#car:hover {
     transform: translateY(-10px);
 }
 
-.card-title {
+#car-title {
     font-size: 1.25rem;
     font-weight: bold;
 }
 
+#card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.cont {
+    display: flex;
+    gap: 30px;
+    margin-left: 65px;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: center;
+
+}
+
+img {
+    height: 200px;
+}
+
+.card {
+    border-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.8s ease;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    cursor: pointer;
+    
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+}
 .card-text {
     font-size: 0.9rem;
     color: #555;
 }
+h5{
+    font-size: 1rem;
+    color: #555;
+}
+
+.but {
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 5px;
+    justify-content: center;
+    border-radius: 30px;
+    transition: background 0.7s ease-in-out;
+    color: white;
+width: 200px;
+height: 45px;
+    background-color:  #000;
+    border: none;
+}
+.but:hover{
+    background-color: rgb(255, 174, 0);
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 .footer-section {
-    background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+    background: linear-gradient(145deg, #272727, #363636);
     color: #ffffff;
     position: relative;
 }
@@ -74,13 +145,13 @@
 }
 
 .single-cta i {
-    color: #4CAF50;
+    color: #858585;
     font-size: 30px;
     margin-right: 15px;
 }
 
 .cta-text h4 {
-    color: #fff;
+    color: #adacac;
     font-size: 18px;
     margin-bottom: 5px;
 }
@@ -95,7 +166,7 @@
 }
 
 .footer-brand {
-    color: #fff;
+    color: #979595;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -119,7 +190,7 @@
 }
 
 .social-link:hover {
-    color: #4CAF50;
+    color: #c5c9c5;
 }
 
 .footer-widget-heading h3 {
@@ -136,7 +207,7 @@
     left: 0;
     width: 50px;
     height: 2px;
-    background: #4CAF50;
+    background: #c4c4c2;
 }
 
 .footer-links li {
@@ -150,13 +221,13 @@
 }
 
 .footer-links a:hover {
-    color: #4CAF50;
+    color: #8b8b8b;
     padding-left: 5px;
 }
 
 .footer-links i {
     margin-right: 8px;
-    color: #4CAF50;
+    color: #808080;
 }
 
 .subscribe-form input {
@@ -168,8 +239,8 @@
 }
 
 .subscribe-btn {
-    background: #4CAF50;
-    color: #fff;
+    background: #ffe600;
+    color: #000000;
     border: none;
     border-radius: 30px;
     padding: 12px 25px;
@@ -179,7 +250,9 @@
 }
 
 .subscribe-btn:hover {
-    background: #45a049;
+    background: #000000;
+    color: #ffffff;
+
 }
 
 .copyright-area {
@@ -199,21 +272,22 @@
 }
 
 .footer-menu a:hover {
-    color: #4CAF50;
+    color: #acacac;
 }
+
 
 
 @media (max-width: 767px) {
     .footer-widget {
         margin-bottom: 30px;
     }
-    
+
     .copyright-text,
     .footer-menu {
         text-align: center;
     }
-    
+
     .footer-menu a {
         margin: 0 10px;
     }
-} 
+}

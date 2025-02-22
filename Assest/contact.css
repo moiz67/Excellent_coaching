@@ -1,3 +1,11 @@
+.navbar {
+    z-index: 2;
+ 
+    background-color: #e6e6e6 ;
+}
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 .footer-section {
     background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
     color: #ffffff;

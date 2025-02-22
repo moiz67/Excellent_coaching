@@ -5,7 +5,7 @@
     --button-hover-color: #fff;
     --button-hover-bg: #000;
     --button-bg: #000;
-    --navbar-bg: #f8f9fa;
+    --navbar-bg: #e0e0e0;
     --hover-effect-duration: 2.1s;
     --transition-duration: 1.7s;
     --search-btn-bg: gold;
@@ -71,11 +71,39 @@ body{
 /* Navbar Styles */
 .navbar {
     z-index: 2;
+    
     background-color: var(--navbar-bg);
 }
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
+.carousel-item {
+    height: 90vh;
+    min-height: 400px;
+}
 
+.vc {
+    object-fit: cover;
+    height: 90%;
+    filter: brightness(0.9);
+}
 
+.carousel-caption {
+    bottom: 30%;
+    padding: 2rem;
+
+    border-radius: 15px;
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+}
+
+.input-group {
+    max-width: 800px;
+}
 .navbar-nav .nav-link {
     font-weight: 500;
     position: relative;
@@ -110,9 +138,6 @@ body{
     
 
 }
-
-
-
 
 
 .profile img {
@@ -243,13 +268,13 @@ span {
 }
 
 .single-cta i {
-    color: #4CAF50;
+    color: #858585;
     font-size: 30px;
     margin-right: 15px;
 }
 
 .cta-text h4 {
-    color: #fff;
+    color: #adacac;
     font-size: 18px;
     margin-bottom: 5px;
 }
@@ -264,7 +289,7 @@ span {
 }
 
 .footer-brand {
-    color: #fff;
+    color: #979595;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -288,7 +313,7 @@ span {
 }
 
 .social-link:hover {
-    color: #4CAF50;
+    color: #c5c9c5;
 }
 
 .footer-widget-heading h3 {
@@ -305,7 +330,7 @@ span {
     left: 0;
     width: 50px;
     height: 2px;
-    background: #4CAF50;
+    background: #c4c4c2;
 }
 
 .footer-links li {
@@ -319,13 +344,13 @@ span {
 }
 
 .footer-links a:hover {
-    color: #4CAF50;
+    color: #8b8b8b;
     padding-left: 5px;
 }
 
 .footer-links i {
     margin-right: 8px;
-    color: #4CAF50;
+    color: #808080;
 }
 
 .subscribe-form input {
@@ -337,8 +362,8 @@ span {
 }
 
 .subscribe-btn {
-    background: #4CAF50;
-    color: #fff;
+    background: #ffe600;
+    color: #000000;
     border: none;
     border-radius: 30px;
     padding: 12px 25px;
@@ -348,7 +373,9 @@ span {
 }
 
 .subscribe-btn:hover {
-    background: #45a049;
+    background: #000000;
+    color: #ffffff;
+
 }
 
 .copyright-area {
@@ -368,7 +395,7 @@ span {
 }
 
 .footer-menu a:hover {
-    color: #4CAF50;
+    color: #acacac;
 }
 
 .hero-section {

@@ -1,11 +1,17 @@
 /* General image styling */
-.navbar{
-    background-color: rgb(179, 177, 175);
+.navbar {
+    z-index: 2;
+    
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 img {
     width: 100%;
     max-width: 450px;
     height: auto;
+    border-radius: 20px;
 }
 
 /* Flexbox Layout for .container */
